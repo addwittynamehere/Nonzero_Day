@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/objective_toolbar"
+        android:elevation="4dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:gravity="left|center"
+            android:layout_marginRight="32dp"
+            android:id="@+id/level_layout"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Level"
+                    android:textColor="@color/colorBackground"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/levelTextView"
+                    android:layout_marginBottom="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBackground"
+                    android:text="88"
+                    android:layout_marginTop="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/levelNumberTextView"
+                    />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/level_layout"
+            android:layout_toEndOf="@+id/level_layout">
+            <ProgressBar
+
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="120dp"
+            android:layout_height="14dp"
+            android:id="@+id/levelProgressBar"
+            android:progressDrawable="@drawable/custom_progressbar"
+            />
+            <TextView
+                android:layout_below="@+id/levelProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/experienceTextView"
+                android:textSize="14dp"
+                android:textColor="@color/colorBackground"
+                android:text="1168 XP to Level 301"
+                android:layout_marginTop="3dp"/>
+
+        </RelativeLayout>
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_button_main"
+
+            android:background="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view_background"
+        android:background="@color/colorBackground"
+        android:layout_below="@+id/objective_toolbar"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/objective_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objective_toolbar"
+
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"/>
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/colorAccent"
+        fab:fab_colorPressed="@color/colorAccentAlt"
+
+
+        android:layout_alignBottom="@+id/objective_recycler_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.android.markschmidt.nonzeroday.TimePreference
+        android:title="Change Start Hour"
+        android:summary="Change what hour counts as a new day.  Useful for users who stay up late."/>
+
+</PreferenceScreen>

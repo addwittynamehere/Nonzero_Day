@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            android:gravity="left|center">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_up_button"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:layout_marginLeft="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_toolbar_title"
+                android:textSize="18dp"
+                android:text="placeholder"
+                android:textColor="@android:color/white"
+                android:layout_alignTop="@+id/detail_up_button"
+                android:layout_toRightOf="@+id/detail_up_button"
+                android:layout_toEndOf="@+id/detail_up_button"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <android.support.v4.view.ViewPager
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:id="@+id/graph_viewPager"/>
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/graph_indicator"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:padding="4dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/material_blue_grey_900"   />
+            <ListView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/daydata_listView"
+                android:layout_weight="2"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

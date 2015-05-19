@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        android:gravity="left|center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_up_button"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_marginLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_toolbar_title"
+            android:textSize="18dp"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/settings_up_button"
+            android:layout_toRightOf="@+id/settings_up_button"
+            android:layout_toEndOf="@+id/settings_up_button"
+            android:layout_marginLeft="8dp"/>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow" />
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+

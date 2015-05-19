@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            android:gravity="left|center">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/up_button"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:layout_marginLeft="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_title"
+                android:textSize="18dp"
+                android:text="placeholder"
+                android:textColor="@android:color/white"
+                android:layout_alignTop="@+id/up_button"
+                android:layout_toRightOf="@+id/up_button"
+                android:layout_toEndOf="@+id/up_button"
+                android:layout_marginLeft="8dp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_objective_title"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_objective_title_hint"
+            android:id="@+id/add_objective_title"
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccentAlt"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select an image to represent your objective!"/>
+        <RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/image_selector_recycle_view"
+            />
+        <ImageView
+            android:id="@+id/image_selector"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:cropToPadding="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_objective_complete"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_objective_explanation"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_objective_today_I"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="16dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_objective_verb"
+                android:hint="@string/add_objective_verb_hint"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColorHint="@color/colorAccentAlt"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_objective_single"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_objective_snoun_hint"
+                android:id="@+id/add_objective_noun"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColorHint="@color/colorAccentAlt"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_objective_ive"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="16dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_objective_pverb"
+                android:hint="@string/add_objective_pverb_hint"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColorHint="@color/colorAccentAlt"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_objective_multiple"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_objective_mnoun_hint"
+                android:textSize="@dimen/add_objective_sentences_size"
+                android:textColorHint="@color/colorAccentAlt"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:id="@+id/add_objective_noun_2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirm_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/colorAccent"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/colorAccent"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

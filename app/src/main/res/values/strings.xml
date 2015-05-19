@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Nonzero Day</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="add_objective_title">What is your objective? What do you want to do?</string>
+    <string name="add_objective_title_hint">Enter Objective Title</string>
+    <string name="add_objective_complete">Fill in the blanks in the sentences.</string>
+    <string name="add_objective_explanation">These sentences will be used to describe your data.</string>
+
+
+    <string name="add_objective_today_I">Today I</string>
+    <string name="add_objective_verb_hint">wrote</string>
+    <string name="add_objective_single">1</string>
+    <string name="add_objective_snoun_hint">page</string>
+    <string name="add_objective_ive">I\'ve</string>
+    <string name="add_objective_pverb_hint">written</string>
+    <string name="add_objective_multiple">326</string>
+    <string name="add_objective_mnoun_hint">pages</string>
+    <string name="add_objective_add_title">Add an Objective</string>
+    <string name="add_objective_edit_title">Edit an Objective</string>
+
+    <string name="objective_adapter_today_i">Today I...</string>
+    <string name="intro_card_title">Welcome to Nonzero Day!</string>
+    <string name="intro_card_description">This app is designed to help you get motivated and stay motivated. There are some simple rules I suggest you follow if
+        you intend to use this app to its fullest extent:\n\n<b>Rule 1: You will do something every day</b>\nNo
+        matter what, you will put effort towards your goals every single day. It doesn’t have to be much.
+        If you’ve wasted your whole day away, take five minutes before you to go sleep to do some actual work that interests you.
+        Keeping this momentum going is the key to
+        staying motivated.\n\n<b>Rule 2: You will share
+        your success</b>\nTake pride in your work. Let your friends
+        and family know what you’ve been working on. If you wrote something or made something, show it off.
+        If you read something or learned something, tell the world all about it.\n\n<b>Rule 3: You will forgive
+        yourself</b>\nIf you miss a day or make mistakes, don’t let it be the end. Get back up, dust yourself off,
+        and start over again. If you let one failure derail you, you will never stay motivated.\n\nClick
+        the ‘+’ button to start your first Objective, earn XP by adding new streak data each day, and track
+        your progress in the Objective Detail view!</string>
+
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+
+</resources>

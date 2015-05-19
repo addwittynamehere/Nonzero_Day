@@ -1,0 +1,17 @@
+Index: app/src/main/res/layout/fragment_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_main.xml	(revision )
++++ app/src/main/res/layout/fragment_main.xml	(revision )
+@@ -53,7 +53,7 @@
+             android:layout_height="1dp"
+             android:background="@android:color/darker_gray"/>
+     </RelativeLayout>
+-    
++
+ 
+ 
+     <Button
+\ No newline at end of file
